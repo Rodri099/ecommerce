@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#nav-mobile {
+  list-style: none;
+  display: flex;
+}
+
+#nav-mobile li {
+  margin-right: 10px;
+}
+
+#nav-mobile li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos para el contenedor de los elementos de la lista */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cart-icon {
+  color: #999; /* Cambia el color a uno más claro */
+  font-size: 24px;
+}
