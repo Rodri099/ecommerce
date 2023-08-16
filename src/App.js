@@ -1,21 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer';
+import { Header } from "./components/Header";
+import {BrowserRouter as Router} from "react-router-dom";
+import {Paginas} from "./components/Paginas";
+import {Dataprovider} from "./context/Dataprovider"
+import {Carrito} from "./components/Carrito"
+
 
 const App = () => {
   return (
-    <Router>
-      <div>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<ItemListContainer />} />
-          <Route path="/category/:categoryId" element={<ItemListContainer />} />
-          <Route path="/item/:itemId" element={<ItemDetailContainer />} />
-        </Routes>
-      </div>
-    </Router>
+    <Dataprovider>
+    <div className='App'>
+      <Router>
+      <Header />
+      <Carrito/>
+      <Paginas />
+      </Router>
+    </div>
+    </Dataprovider>
   );
 }
 
